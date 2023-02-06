@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import UserBid from "./screens/UserBid";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3500/users")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("data", data);
+        setUsers(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+  
+  console.log(users);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <UserBid />
     </div>
   );
-}
+};
 
 export default App;

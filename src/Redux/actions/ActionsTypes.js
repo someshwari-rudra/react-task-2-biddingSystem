@@ -1,0 +1,6 @@
+export const GENRATEUSER = "GENRATEUSER";
+export const ENABLE_NEXT_BID = "ENABLE_NEXT_BID";
+export const GENERATE_COINS = "GENERATE_COINS";
+export const INPUT_ONCHANGE = "INPUT_ONCHANGE";
+export const INPUT_VALUE_RESET = "INPUT_VALUE_RESET";
+export const COIN_RESET = "COIN_RESET";
