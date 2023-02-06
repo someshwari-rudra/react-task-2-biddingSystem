@@ -32,15 +32,14 @@ const SingleUserBid = () => {
                 {inputFields.map((input) => {
                   return (
                     <div className="col-md-6" key={input.id}>
-                      <TextField
-                        {...input}
-                        onchange={handleOnchange}
-                      />
+                      <TextField {...input} onchange={handleOnchange} />
                     </div>
                   );
                 })}
                 <div
-                  className={`${totalCoins >= price ? "enable" : "disableOverlay" }`}
+                  className={`${
+                    totalCoins >= price ? "enable" : "disableOverlay"
+                  }`}
                 ></div>
                 <div className="d-flex justify-content-center align-item-center ">
                   <button className="btn btn-primary m-2">Submit</button>

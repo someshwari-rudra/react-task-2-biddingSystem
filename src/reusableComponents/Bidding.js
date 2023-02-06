@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import SingleUser from "./SingleUser";
 import SingleUserBid from "./SingleUserBid";
 
 const Bidding = () => {
@@ -10,7 +11,8 @@ const Bidding = () => {
     <div className="container">
       <h3>{name}</h3>
       <div className="row g-2">
-        <SingleUserBid />
+        {/* <SingleUserBid /> */}
+        <SingleUser/>
       </div>
     </div>
   );
