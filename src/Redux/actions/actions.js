@@ -2,6 +2,7 @@ import Bidding from "../../reusableComponents/Bidding";
 import {
   COIN_RESET,
   ENABLE_NEXT_BID,
+  FORM_SUBMIT,
   GENERATE_COINS,
   GENRATEUSER,
   INPUT_ONCHANGE,
@@ -85,3 +86,10 @@ export const inputOnchange = (name, value) => {
     value: value,
   };
 };
+
+export const FormSubmit = (data) => {
+  return {
+    type: FORM_SUBMIT,
+    payload: data,
+  };
+}
