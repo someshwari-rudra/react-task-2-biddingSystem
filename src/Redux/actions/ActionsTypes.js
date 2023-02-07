@@ -4,3 +4,4 @@ export const GENERATE_COINS = "GENERATE_COINS";
 export const INPUT_ONCHANGE = "INPUT_ONCHANGE";
 export const INPUT_VALUE_RESET = "INPUT_VALUE_RESET";
 export const COIN_RESET = "COIN_RESET";
+export const FORM_SUBMIT = "FORM_SUBMIT";
