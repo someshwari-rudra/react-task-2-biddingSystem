@@ -3,6 +3,7 @@ import { GENRATEUSER } from "../actions/ActionsTypes";
 
 const initailValue = {
     users: [],
+    name:"",
     userNames:[],
     AllUsers: [],
     name: "",

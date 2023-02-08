@@ -23,7 +23,7 @@ const SingleUserBid = () => {
   );
   // const dispatch = useDispatch();
   // const handleOnchange = (e) => [
-  //   dispatch(inputOnchange(e.target.name, e.target.value)),
+  //   dispatch(inputOnchange(e.target.name, e.target.value)), ///ye code imporvoed h uska but problkem
   // ];
   console.log("inputValue", inputValue);
   return (

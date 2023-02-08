@@ -6,7 +6,7 @@ import { FormSubmit, inputOnchange } from "../Redux/actions/actions";
 import TextField from "./TextField";
 
 const SingleUser = () => {
-  const [formData, setFormData]= useState({})
+  const [formData, setFormData] = useState({});
   const form1 = useRef();
   const form2 = useRef();
   const form3 = useRef();
@@ -63,8 +63,8 @@ const SingleUser = () => {
   };
   const onSubmit = (data) => {
     setFormData(data);
-    console.log("daataaa0",formData)
-    console.log('onSubmit', data)
+    console.log("daataaa0", formData);
+    console.log("onSubmit", data);
     dispatch(FormSubmit(data));
     resetFirst();
     resetSecond();
@@ -97,11 +97,13 @@ const SingleUser = () => {
                         action=""
                         className="row p-2"
                         ref={form1}
-                        onSubmit={handleFirstFormSubmit(onSubmit)}>
+                        onSubmit={handleFirstFormSubmit(onSubmit)}
+                      >
                         {FirstBid.Input.map((input) => {
                           return (
                             <div className="col-md-6" key={input.id}>
                               <TextField
+                                // onChange={handleOnchange}
                                 errors={errorsFirst}
                                 register={registerFirstField}
                                 {...input}

@@ -50,7 +50,7 @@ const names = {
 export const generateUser = (userName) => (dispatch) => {
     Object.keys(names).map((name) => {
         return dispatch({
-          type: INPUT_VALUE_RESET,
+          type: INPUT_VALUE_RESET, 
           name: name,
           value: "",
         });
@@ -87,9 +87,10 @@ export const inputOnchange = (name, value) => {
   };
 };
 
-export const FormSubmit = (data) => {
+export const FormSubmit = (name,data) => {
   return {
     type: FORM_SUBMIT,
-    payload: data,
+    name: name,
+    data:data
   };
 }
